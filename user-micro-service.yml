@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: user-micro-service
+server:
+  port: 2001
