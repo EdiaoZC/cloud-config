@@ -3,6 +3,8 @@ spring:
     name: movie-service
 server:
   port: 2001
+application:
+  version: 1.0
 eureka:
   client:
     serviceUrl:
