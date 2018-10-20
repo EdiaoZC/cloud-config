@@ -2,7 +2,7 @@ spring:
   application:
     name: movie-micro-service
 server:
-  port: 2002
+  port: 2001
 eureka:
   client:
     serviceUrl:
