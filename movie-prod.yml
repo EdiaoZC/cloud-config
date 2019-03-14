@@ -1,6 +1,10 @@
 spring:
   application:
     name: movie-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
 server:
   port: 2001
 application:
