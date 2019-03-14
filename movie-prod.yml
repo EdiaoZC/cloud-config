@@ -2,7 +2,7 @@ spring:
   application:
     name: movie-service
   datasource:
-    url: jdbc:mysql://localhost:3306/form
+    url: jdbc:mysql://localhost:3306/any_db
     driver-class-name: com.mysql.jdbc.Driver
     username: root
 server:
