@@ -1,6 +1,6 @@
 spring:
   application:
-    name: movie-micro-service
+    name: movie-service
 server:
   port: 2001
 application:
