@@ -2,7 +2,7 @@ spring:
   application:
     name: movie-service
   datasource:
-    url: jdbc:mysql://localhost:3306/form?serverTimezone=Asia/Shanghai&useCharater=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://localhost:3306/any_db?serverTimezone=Asia/Shanghai&useCharater=true&characterEncoding=utf8&useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
     username: root
 application:
