@@ -11,3 +11,31 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://peer1:1001/eureka/,http://peer2:1002/eureka/
+---
+spring:
+  profiles: zone-2
+eureka:
+  client:
+    region: beijing
+    availability-zones:
+      beijing: zone-1,zone-2
+    service-url:
+      zone-1: http://peer1:1001/eureka/
+      zone-2: http://peer2:1002/eureka/
+  instance:
+    metadata-map:
+      zone: zone-2
+---
+spring:
+  profiles: zone-1
+eureka:
+  client:
+    region: beijing
+    availability-zones:
+      beijing: zone-1,zone-2
+    service-url:
+      zone-1: http://peer1:1001/eureka/
+      zone-2: http://peer2:1002/eureka/
+  instance:
+    metadata-map:
+      zone: zone-1
